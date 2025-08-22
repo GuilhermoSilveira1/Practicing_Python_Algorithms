@@ -17,6 +17,8 @@ def celsius_fahrenheit(num):
 
 # Inversor de String
 # Receba uma palavra e exiba ela invertida (ex: "Python" → "nohtyP").
+def inversor(palavra):
+    print(f'O inverso de "{palavra}" é "{palavra[::-1]}"')
 
 # Contador de Caracteres
 # Conte quantos caracteres (sem espaços) há em uma frase.
