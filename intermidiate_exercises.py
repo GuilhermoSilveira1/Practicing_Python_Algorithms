@@ -1,14 +1,30 @@
 # Lista de Nomes
 # Peça ao usuário 5 nomes e armazene numa lista. Depois mostre em ordem alfabética.
+def ordem_alfabetica(nome1, nome2, nome3, nome4, nome5):
+    lista_nomes = [nome1, nome2, nome3, nome4, nome5]
+    print(f'Os nomes em ordem alfabética são: {lista_nomes.sort()}')
 
 # Contagem de Palavras
 # Receba uma frase e mostre quantas palavras diferentes ela tem (usar split e set).
+def palavras_diferentes(texto):
+    texto_dividido = texto.split()
+    print(f'O texto enviado possui {texto_dividido.set()} palavras únicas')
 
 # Fatorial
 # Receba um número e calcule o fatorial dele.
+def fatorial(num):
+    if num == 1 or num == 0:
+        return 1
+    else:
+        return num * fatorial(num -1)
 
 # Sequência de Fibonacci
 # Mostre os n primeiros números da sequência.
+def fibonacci(num):
+    if num == 1 or num == 0:
+        return 1
+    else:
+        return num + num -1
 
 # Caixa Eletrônico Simples
 # Peça um valor e simule a retirada do dinheiro mostrando quantas notas de cada valor seriam entregues (100, 50, 20, 10, 5, 2, 1).
